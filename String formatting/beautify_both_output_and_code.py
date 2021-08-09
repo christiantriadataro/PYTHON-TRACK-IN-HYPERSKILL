@@ -32,7 +32,7 @@
 # http://example.com/AnnMelon/desirable/bodybuilder/profile
 
 # using str.format method
-# print("http://example.com/{nickname}/desirable/{profession}/profile".format(nickname = input(), profession = input()))
+print("http://example.com/{nickname}/desirable/{profession}/profile".format(nickname = input(), profession = input()))
 
 # using formatted string literals without variable
 print(f"http://example.com/{input()}/desirable/{input()}/profile")
