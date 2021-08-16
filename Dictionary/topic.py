@@ -61,10 +61,10 @@ print(prices_with_constr)   # {'espresso' : 5.0, 'americano': 8.0, 'latte' : 10,
 # multiword expression, etc. That is , the following lines will give
 # you an error:
 
-d1 = dict(888=8.0)
-d2 = dict("americano"=8.0)
-d3 = dict(["americano", "filter"]=8.0)
-d4 - dict(the best americano=8.0)
+# d1 = dict(888=8.0)
+# d2 = dict("americano"=8.0)
+# d3 = dict(["americano", "filter"]=8.0)
+# d4 - dict(the best americano=8.0)
 
 #    Overall, the curly braces and the dict constructor are
 #    interchangeable, just mind the feature given above.
@@ -94,9 +94,9 @@ digits = {1: {'Word': 'one', 'Roman': 'I'},
 my_pet = {}
 
 # add 3 keys and their values into the dictionary
-# my_pet['name'] = 'Dolly'
-# my_pet['animal'] = 'dog'
-# my_pet['breed'] = 'collie'
+my_pet['name'] = 'Dolly'
+my_pet['animal'] = 'dog'
+my_pet['breed'] = 'collie'
 
 print(my_pet)  # {'name': 'Dolly', 'animal': 'dog', 'breed': 'collie'}
 
@@ -113,4 +113,44 @@ my_pets = {'dog': {'name': 'Dolly', 'breed': 'collie'},
 print(my_pets['cat'])   # {'name': 'Fluffy', 'breed' : 'maine coon'}
 
 print(my_pets['cat']['breed'])   # maine coon
+
+# Choosing the keys
+# You can save objects of any type in a dictionary, but not all of 
+# them qualify as a key. You need a good, unique key for each
+# object in your collection. Still, this is not the only restriction on
+# dictionary keys and we weill cover them later. For now, safely use
+# numbers and strings.
+
+# When a key has already been added to your dictionary, its old
+# value will be overwritten:
+
+trilogy = {'IV': 'Star wars', 'V': 'The Empire Strikes Back',
+           'VI': 'Return of the Jedi'}
+print(trilogy['IV'])   # Star Wards
+
+trilogy['IV'] = 'A New Hope'
+print(trilogy['IV'])   # A New Hope
+
+# In Python 3.7 and up, dictionaries do maintain the insertion
+# order for values they store, but in previous versions it is not
+# necessarily so:
+
+alphabet = {}
+alphabet['alpha'] = 1
+alphabet['beta'] = 2
+
+print(alphabet)
+# Python 3.7 output: {'alpha': 1, 'beta': 2}
+
+# Summary
+# In this topic we've covered some basics for the dictionary data
+# type in Python:
+
+# how to create a dictionary,
+# what is a nested dictionary,
+# how to manage dictionary items: keys and values
+
+# In the following lesson you'll get acquainted with basic
+# operations on dictionaries, but first, let's practice some tasks,
+# so you would feel confident using this data type!
 
