@@ -13,6 +13,14 @@ meals = [
 total = 0
 # the list "meals" is already defined
 # your code here
+for i in range(5):
+    total += meals[i].get("kcal")
+print(total)
+print(sum(meals[i].get("kcal") for i in range(len(meals))))
+tol = 0
 for i in meals:
-    if i == 'kcal':
-        total += meals.get(i)
+    tol += i["kcal"]
+print(tol)
+print(sum(i.get('kcal') for i in meals))
+print(sum(i["kcal"] for i in meals))
+
