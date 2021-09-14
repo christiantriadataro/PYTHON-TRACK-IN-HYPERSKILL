@@ -23,7 +23,7 @@ import random
 print(random.random())  # 0.03265962507905529
 
 # We can also control the pseudo-random behavior by
-# specifying the seeed manually, i.e. configure the new
+# specifying the seed manually, i.e. configure the new
 # sequence of pseudo-random numbers using the 
 # random.seed(x) function. You can set your own number
 # or omit the optional argument x and consequently current
