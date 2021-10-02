@@ -1,0 +1,8 @@
+# Use the chmod command and absolute mode to set permissions
+# to read, write and execute the /tmp/test.exe file for all the
+# users.
+
+solve() {
+    # add your solution here
+    chmod a=rwx /tmp/test.exe
+}
