@@ -114,7 +114,7 @@ word = input("Enter a word: ")
 if word != "cat":
     print(word)
 else:
-    raise Exception("There is a wrong word!")
+    raise ValueError("There is a wrong word!")
 
 # As you can see, the raise keyword together with the if-else
 # statement is very similar to the assert keyword, but their
