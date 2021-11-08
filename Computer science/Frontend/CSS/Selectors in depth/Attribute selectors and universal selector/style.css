@@ -1,0 +1,37 @@
+#list {
+    font-size: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+[title] {
+    background-color: aliceblue;
+}
+
+[title="Persian cat"] {
+    text-decoration: line-through;
+}
+
+[title^="S"] {
+    font-weight: bold;
+}
+
+[title$="at"] {
+    font-style: italic;
+}
+
+[title*="sia"] {
+    border: 3px dotted blue;
+}
+
+[title~="Siamese"] {
+    text-decoration: underline;
+}
+
+[title|="Chantilly"] {
+    border: 3px dotted red;
+}

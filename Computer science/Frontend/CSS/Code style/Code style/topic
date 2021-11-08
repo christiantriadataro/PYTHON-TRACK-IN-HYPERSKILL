@@ -1,0 +1,311 @@
+Theory: Code style
+
+1. CSS: Code style
+The quality of code depends on many things and one of the
+most important is apparently the code style. Code style helps
+facilitate teamwork and makes the code look perfect.
+
+In this topic, we are going to look through the list of code style
+rules. Enjoy!
+
+        Note that these rules are not actually The rules. They are
+        just recommendations from Google. There exist other
+        code style guides.
+
+
+
+2. Validity
+The validity of the code is important both for HTML and CSS. It's
+a measurable quality of the code. With valid CSS we get rid of
+redundant code and use stylesheets correctly.
+
+Use validators for validation if the code is not browser-
+dependent.
+
+
+3. Classes: Part 1
+Give proper names to identifiers. Don't use a cipher or name the
+class for the style. Try to come up with a name that explains the
+purpose of the class or just give it a default name. Default
+names are for the elements that have no special purpose or are
+similar to the other ones. Usually, those are just helpers. It's
+recommended to choose names that reflect the nature of the
+class since they are easy to understand and most likely will not
+have to be changed in the future.
+
+With default names, you rarely need to make unnecessary
+changes in the documents or templates.
+
+Cool:
+/* Precise and to the point */
+#gallery {}
+#login {}
+.video {}
+
+/* Default names */
+.aux {}
+.alt {}
+
+Not cool:
+/* Meaningless */
+#yee-1901 {}
+
+/* Describes the style */
+.button-green {}
+.clear {}
+
+
+4. Classes: Part 2
+Make the name as short as possible but still easy to
+understand. Try to explain what exactly this element should do
+while at the same time be as brief as possible. Brevity is the soul
+of wit. This way of using classes and identifiers makes the
+code more readable and efficient.
+
+Cool:
+#nav {}
+.author {}
+
+Not cool:
+#navigation {}
+.atr {}
+
+
+5. Type selectors
+Except for when it's unavoidable, don't use element names with
+class names of identifiers.
+
+Cool:
+#example {}
+.error {}
+
+Not cool:
+ul#example {}
+div.error {}
+
+6. Shorthand properties
+CSS provides a variety of different shorthand properties, which
+are recommended to use whenever possible, even if it's only for
+one defined value.
+
+Cool:
+.element {
+    border-top: 0;
+    font: 100%/1.6 palatino, georgia, serif;
+    padding: 0 1em 3em 2em;
+}
+
+Not cool:
+.element {
+    border-top-style: none;
+    font-family: palatino, georgia, serif;
+    font-size: 100%;
+    line-height: 1.6;
+    padding-bottom: 3em;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+
+
+7. Measuring units
+Don't define measuring units for zero values if there's no good
+reason.
+
+Cool:
+.element {
+    margin: 0;
+    padding: 0;
+}
+
+Not cool:
+.element {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+8. Fractions
+Don't use fractions from -1 to 1 with zero as an integer part.
+
+Cool:
+.element {
+    font-size: .8em;
+    padding-bottom: .1em;
+}
+
+Not cool:
+.element {
+    font-size: 0.8em;
+    padding-bottom: 0.1em;
+}
+
+
+9. Quotes
+The rule is simple: don't use quotes with url().
+
+Cool:
+@import url(//www.google.com/css/go.css);
+
+Not cool:
+@import url('//www.google.com/css/go.css');
+
+
+10. Separators
+Don't use anything except dashes as a separator in class
+names.
+
+Cool:
+#video-id {}
+.ads-sample {}
+
+Not cool:
+/* Not separated */
+.demoimage {}
+
+/* Not a dash */
+.error_status {}
+
+
+11. Colors
+In HTML it's possible to use six symbol code to represent a
+color instead of using the name. This makes the code shorter
+and allows to operate with a longer list of colors. It's called
+hexadecimal notation and recommended to use where
+possible.
+
+If first two digits are equal, second two digits are equal and
+last two digits are equal, use three symbols hexadecimal
+notation.
+
+Cool:
+color: #ebc;
+
+Not cool:
+color: #eebbcc;
+
+
+12. Semicolons
+Put semicolons after every property declaration.
+
+Cool:
+.element {
+    display: block;
+    height: 100px;
+}
+
+Not cool:
+.element {
+    display: block;
+    height: 100px;
+}
+
+
+13. Spaces
+Put spaces before the value of the property.
+
+Cool:
+h3 {
+    font-weight: bold;
+}
+
+Not cool:
+h3 {
+    font-weight:bold;
+}
+
+
+
+14. Indents
+As in HTML, use two-space indents for child elements.
+
+Cool:
+@media screen, projection {
+    html {
+        background: #fff;
+        color: #fff;
+    }
+}
+
+Not cool:
+@media screen, projection {
+html {
+background: #fff;
+color: #444;
+}
+}
+
+
+15. Ordering
+Declare properties in alphabetical order. Browser prefixes
+should be ignored while sorting, but if there are several of
+them, sort them as well.
+
+Cool:
+.element {
+    border: 1px solid;
+    text-align: center;
+    text-indent: 2em;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+Not Cool:
+
+.element {
+    -webkit-border-radius: 4px;
+    text-align: center;
+    border: 1px solid;
+    text-indent: 2em;
+    -moz-border-radius: 4px;
+}
+
+16. Selectors
+For every selector or declaration start a new line.
+
+Cool:
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+Not cool:
+a:focus, a:active {
+    position: relative; top: 1px;
+}
+
+17. Blank lines
+This is an obvious yet very important rule: always leave a
+blank line between the rules.
+
+Cool:
+html {
+    background: #fff;
+}
+
+body {
+    margin: auto;
+    width: 50%;
+}
+
+Not cool:
+html {
+    background: #fff;
+}
+body {
+    margin: auto;
+    width: 50%;
+}
+
+18. Summary
+Code style is important in any programming language. Yes,
+there are rules of syntax, but they're not enough to make the
+code easily understandable for whoever is reading it. That's
+why you should consider all those tips even though they aren't
+obligatory. The list is long, but if you follow it, name classes
+and selectors properly, use correct indents, remember
+semicolons, spaces, and blank lines, you'll quickly get used to
+all of it.

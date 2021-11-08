@@ -1,0 +1,55 @@
+Theory: DOM
+
+Even wondered how web pages are rendered? Have you
+thought about how the browser works during site loading
+and what it does with the source code? It's good to be
+curious, and it's useful to have at least a general idea of
+how it all works. Let's try to figure it out together!
+
+1. Briefly about DOM
+For starters, it's a good idea to understand how browsers
+render web pages.
+
+A browser sends a request to the server, in response it
+receives the HTML source code and tries to parse it. Then,
+in the process of analyzing the HTML code, the browser
+creates a DOM tree in the computer's memory and uses it
+to further render the web pages.
+
+DOM (Document Object Model) is the representation of
+an HTML document as a tree structure that various
+programs can work with.
+
+To understand what the DOM structure looks like, we will
+take a simple document:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        <h1>What is DOM?</h1>
+        <p>DOM is ...</p>
+    </body>
+</html>
+
+Each tree node, including the root, is an HTML document
+element. It has zero or more children nodes (nested
+elements). A node that does not have children is called a
+leaf. These leaves can be text strings, images, videos, and
+so on.
+
+2. Nodes
+Everything in HTML is part of the DOM, including the
+<!DOCTYPE...> directive and comments, even though
+they do not appear in the browser. Even the entire
+document that represents a document object is
+technically a DOM node. The DOM is the HTML page
+interface and the first step is rendering it in the browser.
+We can interact with DOM nodes using programming
+languages.
+
+In the following topics we will learn how to get the
+elements you need and add classes and styles.
+

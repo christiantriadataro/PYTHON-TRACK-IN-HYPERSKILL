@@ -1,0 +1,32 @@
+.header {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /*write here*/
+    position: sticky;
+}
+
+.header {
+    height: 50px;
+    background-color: rgba(0,0,0,.9);
+    border: 1px solid lightgray;
+}
+.container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+h1 {
+    font-size: 1em;
+    align-self: center;
+    color: aliceblue;
+}
+.menu {
+    height: 30px;
+    align-self: center;
+}
+main {
+    margin-top: 40px;
+}
+

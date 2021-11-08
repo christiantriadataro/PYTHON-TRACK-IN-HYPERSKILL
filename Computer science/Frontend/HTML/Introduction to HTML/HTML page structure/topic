@@ -1,0 +1,81 @@
+Theory: HTML page structure
+
+Programming is not as mechanical and alien as it may seem:
+in many aspects, it is similar to the human world. This is
+very easy to notice if you look at the structure of HTML
+pages, which contains elements like <head> and <body>.
+Making a site is thus a process of creation, and as a creator,
+you need to be familiar with all the necessary building
+blocks. There is a lot to learn, but any lot starts with the
+essential basics: please welcome on stage, HTML tags.
+
+1. Basic tags in HTML
+Among numerous HTML tags that form the logical structure
+of a page, some are considered the base. The structure can
+be divided into three main sections: <html>, <head> and
+<body>.
+
+Take a look at the code of a simple HTML page:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Page title</title>
+    </head>
+    <body>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph</p>
+    </body>
+</html>
+
+If you save this code in the HTML format (.html) and open it
+in your browser, the page will look like this:
+
+This looks quite basic, but with HTML you can do much
+more: customize the structure of the text, manage its visual
+presentation, and display paragraphs, forms, pictures, titles,
+and tables. Hypertext markup language allows you to format
+texts, which makes them friendlier to Internet users. It is
+much more convenient to read the text that has clear and
+logical markup rather than plow through unstructured text.
+
+Let's get back to the code from the previous example and
+consider the listed tags in more detail.
+- element <!DOCTYPE> specifies the type of the current
+  document: DTD (Document Type Definition). It is
+  necessary that the browser understands according to
+  which HTML standard to display the web page. As you
+  see, this is one of the tags that aren't paired;
+- the <meta> tag with attribute charset specifies
+  document encoding. If it is not specified, some
+  browsers may display obscure characters instead of
+  the text;
+- the <html> tag indicates that it is an HTML document;
+- the <head> tag is designed to store elements that help
+  the browser and search engines to work with data;
+- the <title> contains the HTML document header.
+  Even though this tag is not mandatory, it is till present
+  on almost all web pages on the Internet;
+- the <body> tag defines the page content area. It wraps
+  the content displayed in the main browser window;
+- the <h1> tag holds the page title within the body, and
+  the <p> tag is responsible for the paragraphs. These
+  tags are not the main sections and provided here as an
+  example, but you're likely to find them useful in the
+  future as you move from basic to artsy.
+
+2. Basic HTML Page Structure
+Here is a visualization of the basic HTML page structure:
+
+As you can see, this structure bears a resemblance to our
+anatomy. Hopefully, this analogy will help you understand
+HTML better.
+
+3. Conclusion
+Surely, both humans and web pages are much more complex
+and show a lot of variation. Modern pages can be very large
+and may contain a lot of different tags inside <body>, but
+their basic structure always remain the same. Com to
+think of it, this is also so very human.
+

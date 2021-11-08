@@ -1,0 +1,83 @@
+Theory: What is CSS
+Web pages written solely in HTML tend to look somewhat
+boring and monotonous. Such pages simply fail to draw
+attention to the content because visitors get lost in a bunch of
+elements without much good design. Perhaps Hypertext Markup
+Language alone was enough to amuse Internet users in early
+90's, but now they've grown pickier and harder to impress.
+
+The first version of the HTML standard did not provide any
+means to manage the appearance of the information.
+Interpretation of the appearance relied entirely on the styles
+built into the browser. The urgent need to give sites personal
+designs prompted HTML to add "enhanced tags" which allowed
+for broader control over how the information is displayed. As a
+result, HTML code became difficult to understand because of
+the terrible mixture of logical and design tags.
+
+To separate markup from design management, CSS was
+developed. This division made code simpler and cleaner,
+reducing the duplication of lines. CSS (Cascading Style Sheets)
+is a language responsible for the visual presentation of
+documents written in HTML. CSS allows changing the colors of
+the elements, their height and width, the location of individual
+blocks, background images, and much more. CSS files are saved
+in .css format.
+
+To date, the latest version of this technology is CSS3. It even
+has its own logo:
+
+A web page made with CSS would be drastically different from
+the very same page created without it. See for yourself in the
+following example:
+
+1. Why use CSS?
+CSS got really popular, which makes a lot of sense when you
+think about all its benefits:
+- It makes HTML pages more beautiful.
+- It saves developers time. You can write a CSS file once and
+  then connect it to several HTML pages
+- Pages load faster. Instead of writing the same property to
+  different HTML elements, it is enough to write one CSS
+  rule and apply it to several elements at once. Less code
+  means faster loading time!
+- It's compatible with multiple devices. Style sheets allow
+  you to optimize content for more than one type of device.
+  Using the same HTML document, you can present different
+  versions of a website for computers, laptops and
+  smartphones.
+- Last but not least, it is supported by all latest browsers.
+
+2. Short History of CSS
+Here's a short history of CSS for those interested in details.
+
+The concept of cascading stylesheets was proposed in 1994 by
+Hakon Wium Lie, a Norwegian scientist and IT specialist
+working for the W3C consortium at the time.
+
+The first version of CSS (CSS1) was published only as a
+recommendation in 1996. In that version it is possible to control
+the size of the font and change its style to or from italic and
+bold. One could also draw frames around the blocks, change the
+background, change the colors of the text, align tables and
+images and much more.
+
+CSS2 was released in 1998. That version allowed you to control
+the location of elements on the page and set different styles for
+different media. For example, it became possible to display the
+same web page with an individual design for computers,
+printers, and mobile phones.
+
+CSS3 appeared in June 1999. The main feature of CSS3 is the
+ability to create animated elements without using programming
+languages.
+
+3. Conclusion
+CSS is most often used as a tool to describe and design the
+appearance of web pages written using markup languages. CSS
+is powerful tool, and it's frankly difficult to imagine modern
+web sites without it. This technology can change the
+appearance of HTML pages - for the better. Web pages after
+CSS touch-up look magical. Let's master this magic together!
+
+

@@ -1,0 +1,74 @@
+Theory: Basic syntax
+
+CSS has its own code rules. The syntax of this language is not
+complicated: it is a list of parameters responsible for the design
+of elements on the page.
+
+Basic CSS syntax can be schematically described as follows:
+
+selector { property: value; }
+
+CSS syntax consists of two main parts: a selector and a
+declaration block that is put in curly brackets. Let's look at them
+more closely.
+
+1. Selector
+Selector indicates which HTML elements the styles will be
+applied to. For example:
+
+h1 { color: red; }
+
+In this case, the style will apply to all <h1> elements on the
+page. The text of the <h1> elements will turn red.
+
+You can write multiple selector separated by commas, and all
+styles specified in the declaration block will be applied to them.
+For example:
+
+h1, p { color: red; }
+
+Here, styles are applied to two HTML tags at once. All <h1> and
+<p> elements on the web page will have a red text color.
+
+2. Declaration block
+Declaration block contains one or more declarations separated
+by semicolons. Several declarations look like this:
+
+div {
+    width: 500px;
+    height: 50px;
+    color: yellow;
+}
+
+In this example, three styles are applied to <div> elements
+simultaneously: specify width equal to 500 pixels, change the
+height value to 50 pixels, and make the entire text yellow.
+
+Each declaration includes a CSS property name and a value
+separated from each other by a colon.
+
+Property determines what exactly will be altered: background,
+text color, position on the page, or something else. The value of
+a property is a kind of refinement of what it will be change to.
+Each property has its own individual set of permissible values.
+We will learn about the most common properties and their
+permissible values in the following topics. Take a look at another
+example:
+
+span { font-size: 25px; }
+
+In this case, font-size is a property to the elements
+and 25px is the value. As you probably guessed, here we
+change the font size to 25 pixel in <span> element.
+
+        Declaration blocks are always enclosed in curly brackets.
+
+3. Conclusion
+Here's the deal: there are numerous existing CSS properties:
+more than 500! One can't possibly memorize them all, so if you
+forget something, do not hesitate to simply look it up. It's
+alright, really, as even the most experienced developers refer to
+guides and resources! The important thing is to grasp the basics
+of CSS syntax. Let's make sure you do!
+
+

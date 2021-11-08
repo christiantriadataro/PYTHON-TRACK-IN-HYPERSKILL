@@ -1,0 +1,111 @@
+Theory: Tags and attributes
+
+HTML documents consist of words that contain instructions
+on how to display a web page properly. These instructions
+are called tags. They indicate which block to display.
+
+When a browser receives an HTML document, it analyzes the
+tags and uses them to form elements that we can see and
+interact with. In other words, tags are the bricks that builds a
+web page. The current HTML specification includes about
+100 tags. Take a look at the complete list of all existing tags
+by W3 Schools. It will take time to memorize them all!
+
+Tag syntax is very simple. The name of an element is written
+between the < and > symbols. Tag names are case-
+insensitive, but it is considered good practice to write them
+in lowercase.
+
+All tags in HTML language are divided into two main types:
+paired and unpaired. Let's consider them both in more detail.
+
+        You can use CodePen to try out all examples by
+        yourself.
+
+1. Paired tags
+Paired HTML tags consist of two instructions - an opening
+tag (also called a starting tag) that marks the beginning of a
+block, and a closing tag that looks the same but with an
+additional slash /.
+
+As an example, we will consider the <p> tag. It represents a
+text paragraph:
+
+<p>Some kind of a text</p>
+
+Here, <p> is a starting tag, Some kind of a text is the
+content, and </p> is a closing tag.
+
+The tags are basically containers where we can put
+(enclose) something. Paired HTML tags usually contain
+either other tags or some information, for instance, text.
+
+2. Unpaired tags
+Unpaired tags have no content inside. They form graphic
+HTML elements or symbols on a page. So, unpaired HTML
+tags have only an opening tag.
+
+Here is an example of an unpaired tag:
+<hr>
+
+A browser will draw a horizontal line once it detects this tag.
+Another example of an unpaired tag is <br> that defines a
+single line break.
+
+3. Nested tags
+Tags can be also nested:
+
+<p>You have learned HTML <b>tags</b> <br>Congratulations!</p>
+
+Here, <b> is used to bold a word.
+This HTML line is rendered as:
+
+        A nested tag must be closed before the initial closing
+        one.
+
+The outer tag is called a parent element, and the inner tag is
+a child element.
+
+4. Tag attributes
+To extend the capabilities of individual tags and manage
+them easier, we can use attributes. Attributes are
+clarifications for the browser on how to display a tag.
+
+Each HTMl attribute consists of names and values. The
+following example shows the syntax of attributes:
+
+<a href="https://hyperskill.org">The link</a>
+
+Here, the <a> tag means a link, href is the name of an
+attribute, and "https://hyperskill.org" is the value. The
+attribute is assigned to a value with a equals sign =. HTML
+allows you to specify attribute values without quotes if the y
+consist of one word. However, using quotes is a good
+practice. The value of an attribute can be enclosed in double
+or single quotes ("" or '').
+
+Another important feature of the HTML attribute syntax is
+that an attribute must be written in the angle brackets:
+
+<img src="image.png">
+
+In this example, an image is added to a web page with the
+unpaired <img> tag. A link to the file is specified in the src
+attribute. The value of the attribute is the reference to the
+desired image.
+
+There are many attributes out there. It can be worth your
+while checking them out.
+
+5. Conclusion
+In this topic, we have covered several useful tags and some
+attributes. Tags provide information to the browser about the
+structure of a web page. Remember that the name of a tag is
+enclosed between < and > in lowercase. They are
+subdivided into opening and closing, paired and unpaired.
+Each subtype has its own purpose. Tag attributes are daddy's
+little helpers. They refine tags and provide additional
+information about tags and help your browser. HTML
+comprises a good number of tags and attributes; some are
+common, some are not. But remember -- practice makes
+perfect!

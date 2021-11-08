@@ -1,0 +1,217 @@
+Theory: Attribute selectors and universal selector
+
+In addition to basic selectors such as element, id, and class
+selectors, CSS provides more complex ways to select a group of
+elements. They allow us to avoid creating a new class every time
+we want to apply styles to several similar elements, which keeps
+the code clean and readable.
+
+1. Universal selector
+If you need to apply a style to all the elements on a page, use
+an asterisk * as a selector name.
+
+HTML <body>:
+<p>Fill it:</p>
+<table>
+    <caption>Parameters</caption>
+    <tr>
+        <th>Height</th>
+        <th>Weight</th>
+    </tr>
+    <tr>
+        <td>_____</td>
+        <td>_____</td>
+    <tr>
+</table>
+
+CSS:
+* {
+    color: brown;
+}
+
+Result:
+
+It's that simple: all the elements on tha page became brown
+just like we wanted.
+
+
+2. Attribute selectors
+Say we want to apply a style to all the elements that have a
+certain attribute or one with a specific value. In this case, we
+can use attribute selectors.
+
+Imagine we've been tasked with styling a page about cats in a a
+very specific way. Here are the style requirements:
+1. All elements with the title attribute should have
+   aliceblue (it's a CSS color name) background;
+2. All elements with the title "Persian cat" should be
+   crossed out;
+3. All elements whose title starts with the letter "S" should
+   be bold;
+4. All elements whose title ends in "at" should be italicized;
+5. All elements whose title contains "sia" should have a
+   blue dotted border;
+6. All elements whose title contains "Siamese" as a
+   separate word should be underlined with a solid line;
+7. All elements whose title has the prefix "Chantilly" should
+   have a red dotted border.
+
+Here is the HTML <body> of the page:
+<div id="list">
+    <p>List of some cat breeds:</p>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Russian_Blue" title="Russian Blue">Russian Blue</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Persian_cat" title="Persian cat">Persian cat</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Chantilly-Tiffany" title="Chantilly-Tiffany">Chantilly-Tiffany</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Siamese_cat" title="Siamese cat">Siamese cat</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Siamese_cat#Traditional_Siamese_versus_modern_development" title="Traditional Siamese cat">Traditional Siamese cat</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Asian_cat" title="Asian cat">Asian cat</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Siberian_cat" title="Siberian cat">Siberian cat</a></li>
+    </ul>
+</div>
+
+Here is its CSS:
+#list {
+    font-size: 20px;
+}
+
+a {
+    color: black;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+We have a lot of style instructions, so let's deal with them
+separately and look at the results of each transformation
+before doing the whole thing.
+
+
+3. Selecting by attribute or value of attribute
+The first requirement is that all the elements with the title
+attribute should have an aliceblue-colored background. To
+select all the elements with a specific attribute, use
+[attribute] as a selector name:
+
+[title] {
+    background-color: aliceblue;
+}
+
+The result will be the following:
+
+List of some cat breeds:
+- Russian Blue
+- Persian cat
+- Chantilly-Tiffany
+- Siamese cat
+- Traditional Siamese cat
+- Asian cat
+- Siberian cat
+
+You can see that all the links have an aliceblue background
+because all of them have the title attribute. So far so good!
+
+Next, all the elements with the title "Persian cat" should be
+crossed out. Strange, but okay! To select all the elements with
+a specific value of some attribute, use [attribute="value"]
+as a selector name:
+
+[title="Persian cat"] {
+    text-decoration: line-through;
+}
+
+4. Selecting by beginning or end of value
+The third requirement is that all the elements whose title
+starts with the letter "S" should be bold.
+
+To select all the elements with a specific attribute whose value
+starts with string, we use [attribute^="string"]:
+
+[title^="S"] {
+    font-weight: bold;
+}
+
+Here is the result:
+
+Next, we want to italicize all the elements whose title ends in
+"at". To select all the elements with some attribute whose
+value ends with string, use [attribute$="String"]:
+
+[title$="at"] {
+    font-style: italic;
+}
+
+The result looks like this:
+
+
+5. Selecting by other parts of value
+Next, all the elements whose title contains "sia" should get a
+blue dotted border. To select all the elements with some
+attribute whose value contains string, use
+[attribute*="string"]:
+
+[title*="sia"] {
+    border: 3px dotted blue;
+}
+
+Here is the result:
+
+Now, we need to make sure that all the elements whose title
+contains "Siamese" as a separate word are underlined with a
+nice solid line. To select the elements with some attribute
+whose value contains string as a separated word, use
+[attribute~="string"]:
+
+[title~="Siamese"] {
+    text-decoration: underline;
+}
+
+Finally, all the elements whose title has the prefix "Chantilly"
+should be marked with a red dotted border. "The string with a
+prefix" implies that the string equals either "prefix" or "prefix
+[one or more words separated by a dash]". So, we need to
+select elements like "Chantilly" or "Chantilly-[something-
+else]" using |=:
+
+[title|="Chantilly"] {
+    border: 3px dotted red;
+}
+
+6. Other notes about attribute selectors
+Now, let's apply all the styles together and check out the final
+result:
+
+Well, that looks interesting, but more importantly, it's exactly
+the way we need it!
+
+Note that although Siamese cat and Traditional Siamese cat
+have the letter combination "sia" inside, the fifth requirement
+does not apply to them because attribute selectors to be case
+insensitive, add the letter i in the brackets:
+
+[title*="sia" i] {
+    border: 3px dotted blue;
+}
+
+Attribute selectors may be combined with others. The selector
+for <img> with the alt attribute to "cat" looks like this:
+
+img[alt="cat"] {
+    ...
+}
+
+There may also be multiple attribute selectors. For example,
+we can take all the images with alt="cat" and the src
+attribute starting with "nicecats":
+
+img[alt="cat"][src^="nicecats"] {
+    ...
+}
+
+7. Conclusion
+Now you know how to apply a certain style to all the elements
+of a page using a universal selector. Also, you are able to
+select elements by their attributes and their values using
+attribute selectors. There was a lot of new information: you
+might find it useful to write out the attribute selectors'
+symbols until you remember them well.
+

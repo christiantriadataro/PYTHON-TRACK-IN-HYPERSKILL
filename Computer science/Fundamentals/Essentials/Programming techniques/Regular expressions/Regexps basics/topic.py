@@ -1,31 +1,31 @@
 # Theory: Regexps basics
 
-# Manipulating text data is quite a popular task in programming
-# as well as in real life. For example, we often may need to
-# analyze a text, find all specific strings in a file, and so on.
-# Processing text data can be quite a challenging problem. That's
-# why there is a special tool called regular expressions that
-# makes it easier and faster.
+# Manipulating text data is quite a popular task in
+# programming as well as in real life. For example, we often
+# may need to analyze a text, find all specific strings in a file,
+# and so on. That's why there is a special tool called regular
+# expressions that makes it easier and faster.
 
 # 1. Why regular expressions?
-# A regular expression (regex or regexp for short) is a sequence of
-# characters that describes a common pattern for a set of strings.
-# Such patters can be used to search, edit, and manipulate texts.
-# They can either check if a whole string or its substring matches
-# the given pattern or replace the substring with another one.
+# A regular expression (regex or regexp for short) is a
+# sequence of characters that describes a common pattern for
+# a set of strings. Such patterns can be used to search, edit,
+# and manipulate texts. They can either check if a whole string
+# or its substring matches the given pattern or replace the
+# substring with another one.
 
-# When do we need such patterns? Say we want to obtain all the
-# files with the same extension (like *.pdf), or extract all the
-# entries of a particular name in different forms (for example,
-# Edgar Poe, Edgar Allan Poe, E. A Poe, etc.) all email addresses,
-# or even find all numeric structures denotic dates
-# (02/03/2020). With regexps, such tasks can be done with one
-# line.
+# When do we need such patterns? Say we want to obtain all
+# the files with the same extension (like *.pdf), or extract all
+# the entries of a particular name in different forms (for
+# example, Edgar Poe, Edgar Allan Poe, E. A. Poe, etc.), all email
+# addresses, or even find all numeric structures denoting dates
+# (02/03/2020). With regexps, such tasks can be done with
+# one line.
 
 # How do such patterns look? Well, at first, they may seem
-# confusing, look, for example, at \d+(\.\d)? or [a-zA-Z]. And
-# they're often substantially longer. We'll start with the basics,
-# though.
+# confusing, look, for example, at /d+(\.\d)? or [a-zA-Z].
+# And they're often substantially longer. We'll start with the
+# basics, though.
 
 # Regexps may be regarded as a kind of sublanguage that most
 # programming languages support, but there are some
@@ -33,26 +33,28 @@
 # consider regexps in isolation from programming languages to
 # understand the general idea.
 
-# While learning this topic, you can visi the regexp site to play
+# While learning this topic, you can visit the regexp site to play
 # around with regular expressions from our examples. Choose
 # PCRE as the flavor. It means Perl Compatible Regular
-# Expressions which are the most common standard in practice.
+# Expressions which are the most common standard in
+# practice.
 
 # 2. Matching on examples: more PARKs
-# Let's start by exploring how matching works formally. Although
-# a regex pattern can be quite a complicated expression
-# containing characters with special meaning, the simplest regex
-# is just a string of simple characters. Suppose, there is a set of
-# words: PARK, SPARK, PARKING, MARK, QUARKS. You need to
-# check which of them contain the word PARK. This is what
-# happens, for example, when you perform a Ctrl+F search on a
-# web page.
+# Let's start by exploring how matching works formally.
+# Although a regex pattern can be quite a complicated
+# expression containing characters with special meaning, the
+# simplest regex is just a string of simple characters. Suppose,
+# there is a set of words: PARK, SPARK, PARKING, MARK,
+# QUARKS. You need to check which of them contain the word
+# PARK. This is what happens, for example, when you perform
+# a Ctrl+F search on a web page.
 
 # We can easily solve this problem using the PARK pattern. The
 # pattern means that symbols P, A, R, K in a word must follow
-# each other from the left to the right. We suppose that the whole
-# word matches the pattern if any part (substring) of the word
-# matches it.
+# each other from the left to the right. We suppose that the
+# whole word matches the pattern if any part (substring) of the
+# word matches it.
+
 
 # Pattern = P A R K
 
@@ -150,4 +152,3 @@
 
 # Note how we combine the powers of the different wildcards in
 # the combination .?. It is an underlying idea of regexps as well.
-

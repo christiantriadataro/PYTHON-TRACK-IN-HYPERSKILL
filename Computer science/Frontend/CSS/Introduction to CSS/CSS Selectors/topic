@@ -1,0 +1,92 @@
+Theory: CSS Selectors
+
+A selector points to an element to which
+styles will be applied.
+
+CSS technology does not limit you to using only a single
+selector: you can use multiple! There are several basic types
+that allow us to flexibly change the appearance of web pages. In
+this topic, you will about some of these basic CSS
+selectors.
+
+1. CSS element Selector
+CSS element Selectors are the most elementary and easy-to-
+use selectors. Their essence is the following: you use the name
+of the HTML element to which you want to apply the style as
+the selector.
+
+At the same time, if there are several elements in the layout of
+your web page indicated by this tag, then styles will be applied
+to all of them. Let's see what it looks like in the following
+example:
+
+p {
+    color: brown;
+}
+
+Their CSS code tells you that the text in all paragraphs will be
+brown-colored. We apply it to an HTML document that contains
+the following lines:
+
+<p>The color of the text of this paragraph will become the color of brown.</p>
+<p>And this.</p>
+<p>And this too.</p>
+
+The resulting page will look like this:
+
+As you can see, the style is applied to all HTML elements p on
+the web page.
+
+
+2. CSS id Selector
+CSS id Selector is used to if you need to work with a specific
+element when there are many similar elements. It takes its
+name from the value of the id attribute of the HTML tag you
+need. A symbol # is placed in front of it so that the browser
+understands that this is an id selector.
+
+For example, let's select the first paragraph on the page and
+increase its font. Here's the CSS code:
+
+#big {
+    font-size: 30px;
+}
+
+And this is the HTML code:
+<p id="big">The text of this paragraph will change</p>
+<p>This one won't change size.</p>
+<p>This one won't either.</p>
+
+In the browser, our page will look like this:
+
+The styles were applied only to the HTML tag with the id
+attribute.
+
+3. CSS class Selector
+CSS class Selector is useful when you need to give a lot of
+different elements the same look. The name of the selector is
+taken from the value of the class attribute of the desired
+HTML tag. A dot . is placed in front of it so that the browser
+understands that this is a class selector.
+
+Let's consider an example: say we want to apply the same
+background color (blue) to several different elements.
+
+Here's how the CSS code will look like:
+.blue {
+    background-color: blue;
+}
+
+And here's an example of the HTML code:
+<h1 class="blue">The background color of this element should be blue.</h1>
+<p> class="blue">This too.</p>
+<p>And this one will remain without a beautiful background.</p>
+
+In the browser, our page will look like this:
+
+The styles were applied only to the HTML tags with the class
+attribute.
+
+As you can see, the selectors open up a variety of possibilities
+to design your web page content. We can honestly say that
+selectors are among the most important elements of CSS.
