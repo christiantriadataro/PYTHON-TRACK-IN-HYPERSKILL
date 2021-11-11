@@ -1,0 +1,62 @@
+Theory: Introductio to JavaScript
+
+These days, it is difficult to find sites that do not allow visitors
+to interact with them. Think sliders, web galleries, animation
+and whatever other interactive events that pop out when you
+press some button. The processing of user input, the ability to 
+send/receive data from servers and other interactive behavior
+are provided by JavaScript.
+
+1. What is JavaScript
+JavaScript (JS) is one of the most used programming
+languages. It was created by Brendan Eich in 1995, and it took
+him ten days. You read it right: JavaScript was really developed
+in just en days!
+
+According to GitHub 2018, JS tops the list of the most popular
+programming languages. It is used for both front-end and back-end
+development.
+
+	JavaScript is not Java. These are different progrmaming 
+	languages. Their similar names were a marketing move to 
+	draw attention to the new language and take advantage of
+	the popularity of Java.
+
+JavaScript is based on the ECMAScript standard (often
+shortened to ES). The latest version of this standard is ES11.
+
+2. The first program
+Program written in this language are called scripts. Here is an
+example of a simple JS scripts that prints I am starting to 
+learn JavaScript!:
+
+console.log("I am starting to learn JavaScirpt!");
+
+All modern browsers have a built-in program that allows you to 
+execute JS directly in them. Let's lok at the result of our first
+program in the browser. To do this, press
+Ctrl+Shift+J/Ctrl+Shift+K or Cmd+Opt+J/Cmd+Option+C on
+Mac, write the JS code in the opened console, then press Enter.
+
+console.log("I am starting to learn JavaScript!");
+I am starting to learn JavaScript!
+
+As you can see, the result of our first script was the line I am
+starting to learn JavaScript!.
+
+The browser console is not always easy to use, so you can also
+run his code on this site.
+
+
+3. Conclusion
+JavaScript has a huge community of developers all over the
+world. This programming language is easy to learn and pleasant
+to write programs in. You will still come across difficulties, but
+when you do, you can always ask other programmers for help or 
+even find a ready-made answer!
+
+There is a lot of new information in this topic, so we tried not to
+bore you with the history of JavaScript creation. If you still want 
+to read it, you can visit this page on Wikipedia and then
+continue learning.
+
