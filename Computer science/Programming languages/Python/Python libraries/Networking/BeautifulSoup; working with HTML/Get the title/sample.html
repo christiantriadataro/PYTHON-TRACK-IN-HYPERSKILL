@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Get the title – BeautifulSoup: working with HTML – JetBrains Academy — Learn programming by building your own apps
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+  <meta content="Time to practice! Read the link to an article from the input. Print the heading of this article.
+
+
+ " name="description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="JetBrains Academy, powered by Hyperskill" property="og:site_name"/>
+  <meta content="Get the title – BeautifulSoup: working with HTML – JetBrains Academy — Learn programming by building your own apps" property="og:title"/>
+  <meta content="Time to practice! Read the link to an article from the input. Print the heading of this article.
+
+
+ " property="og:description"/>
+  <meta content="https://hyperskill.org/steps/10213/cover.png" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="https://hyperskill.org/learn/step/10213" property="og:url"/>
+  <meta content="summary_large_image" property="twitter:card"/>
+  <meta content="Get the title – BeautifulSoup: working with HTML – JetBrains Academy — Learn programming by building your own apps" property="twitter:title"/>
+  <meta content="Time to practice! Read the link to an article from the input. Print the heading of this article.
+
+
+ " property="twitter:description"/>
+  <meta content="https://hyperskill.org/steps/10213/cover.png" property="twitter:image"/>
+  <meta content="1014959062006130" property="fb:app_id"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-72.png" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-57.png" rel="apple-touch-icon-precomposed" sizes="57x57"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-228.png" rel="icon" sizes="228x228" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-195.png" rel="icon" sizes="195x195" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-152.png" rel="icon" sizes="152x152" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-144.png" rel="icon" sizes="144x144" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-128.png" rel="icon" sizes="128x128" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-120.png" rel="icon" sizes="120x120" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-96.png" rel="icon" sizes="96x96" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-72.png" rel="icon" sizes="72x72" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-57.png" rel="icon" sizes="57x57" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon.ico" rel="shortcut icon"/>
+  <link href="https://hyperskill.azureedge.net/static/favicons/favicon.ico" rel="icon" sizes="16x16 24x24 32x32 48x48 64x64"/>
+  <script>
+   const is_template_rendered = 'True' === 'True'
+
+    if (is_template_rendered) {
+      window.release = 'master.20457'
+      window.commit = '19485af60c9d8515825abf2c51cfffb9000ebd7b'
+      window.sentry_dsn = 'https://fd8bf2593bdb499e8e62f6e640f2e821@sentry.stepik.org/13'
+
+      try {
+        window.hyperskill_user = JSON.parse('{"id": 172106273, "avatar": "", "badge_title": "", "bio": "", "fullname": "Anonymous 172106273", "gamification": {"active_days": 0, "daily_step_completed_count": 0, "passed_problems": 0, "passed_projects": 0, "passed_topics": 0, "progress_updated_at": null, "activities_count": 1, "passed_activities": 0, "hypercoins": 0, "last_code_problem_client": null, "notifications_unread": 0, "passed_problems_in_ide": 0, "passed_stages": 0, "passed_theories": 0, "seconds_to_reach_stage": 0, "topics_repetitions": {"repetitions_count": 0, "repeated_today_count": 0}}, "invitation_code": null, "comments_posted": {"comment": 0, "hint": 0, "useful link": 0, "solutions": 0}, "username": "id172106273", "selected_tracks": [], "completed_tracks": [], "country": null, "languages": [], "experience": "", "github_username": "", "linkedin_username": "", "twitter_username": "", "reddit_username": "", "facebook_username": "", "discord_id": null, "daily_pace_minutes": 60, "daily_step": null, "date_registered": null, "email": "", "kind": "person", "features": {"learning_path.diagnostic": true, "frontend.confirm_email_toast": true, "gamification_badges": true, "settings.isic": true, "new_profile.tracks": true, "metrics.frontend_events": true, "registration.simplified_form": true, "frontend.kindergarten": true, "projects.capstone_project": true, "header.streak_dropdown": true, "header.track_dashboard": true, "ui.capstone_projects": true, "users.disabled_landing_redirect": true}, "is_anonymous": false, "can_issue_certificate": false, "is_beta": false, "is_biased": false, "is_diagnosed": false, "is_email_verified": false, "is_guest": true, "is_terms_accepted": false, "is_staff": false, "is_subscribed_to_notifications": true, "is_testee": false, "track_id": null, "track_title": null, "project": null, "study_plan_id": 73955125, "subscribed_for_marketing": true, "free_till": null, "isic_id": "", "isic_name": "", "isic_status": 0}')
+      } catch (e) {
+        window.hyperskill_user = null
+      }
+
+      try {
+        window.subscription_info = JSON.parse('{"subscriptions": [], "prices": {"monthly": {"full_price_usd": 4990, "sale_price_usd": 4990, "discounts": []}, "yearly": {"full_price_usd": 59880, "sale_price_usd": 24900, "discounts": [{"type": "yearly discount", "amount_usd": 34980}]}, "team": {"full_price_usd": 39900, "sale_price_usd": 39900, "discounts": []}}, "jet_sales_coupon": null, "trial": {"initial_period": 7, "free_till": null}}')
+      } catch (e) {
+        window.subscription_info = null
+      }
+
+      window.hyperskill_cdn_url = 'https://hyperskill.azureedge.net/'
+    } else {
+      window.release = 'release'
+      window.commit = 'commit'
+      window.sentry_dsn = 'http://d198b09523d44b399ee9eae45c283afc@localhost:9080/2'
+      window.hyperskill_user = null
+      window.subscription_info = null
+      window.hyperskill_cdn_url = '/'
+    }
+  </script>
+  <script type="application/ld+json">
+  </script>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-02a392b2.2915cc2f.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-06dbebe2.8c9c59a8.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-089cad30.3d3ed581.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-099f37d3.df7c30d4.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-0c629268.57d3c675.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-0ca3e118.00d671ce.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-0e157316.6fb03dc3.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-0e59b3de.89b311c3.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-0f3ff6e9.7cf05800.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-14b89fa8.948202e8.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-15d84476.17d4a7b2.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-19264c48.dba3395a.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-1a777316.79834986.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-1b3ac5a6.cca97800.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-2106ceee.8d599a49.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-248a06f3.442352bf.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-3362071e.aa1e3085.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-3486d100.8b14d3af.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-3980c44c.235f2398.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-3aaf4310.88abc9f6.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-3de7ca1a.9d02a303.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-3e3eff09.4d54c14d.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-3e62b933.4dea3cb3.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-3eef8ed0.29c20d3c.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-420ab908.c1d1f432.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-420d2357.cdda6582.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-437dd12e.d4588ae0.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-448fa7a4.4d54c14d.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-45e067f0.c074f503.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-46a51dd8.9b6af686.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-476928ae.91aa6bab.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-480319ea.d4a012f0.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-491a7c18.9f1d932e.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-4c651f70.5f9dfc16.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-4f85ba5e.b906a633.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-4fe94c06.03769b7f.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-50e85abc.7a640822.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-515cba41.5d1191fa.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-52ba2f67.e430cf8c.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-53ff8f9c.155dfbee.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-590cf06f.dbeff740.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-5b32b47c.c60690d2.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-5d3cffdf.4d54c14d.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-5d9f4370.1900e6cd.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-5e469d6a.473d604c.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-60b97a5e.3485b28a.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-61d5c0cf.97c28695.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-61e44514.82760f80.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-6807073d.329d64d0.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-68957f65.4d54c14d.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-6a9fd05e.0300b07e.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-6c6c6e17.fac6fd17.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-6cb85ebb.afdba971.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-6d8fc35a.fd6bb7f1.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-72d23e1c.dc2044a7.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-745da3b3.82760f80.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-759e21b4.d168d553.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-75b11a6f.7ab22764.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-7607062f.4d54c14d.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-765dc3b2.f388ccf1.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-79096856.b98bf18e.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-7b1e3b3f.8f856804.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-7b616c4f.ed61f465.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-7c180234.fbed2a59.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-803ef20a.87fd8dd4.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-83c91122.0fe30764.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-91442774.1b5f7d21.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-91a89988.fd164844.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-97af95ae.5b0f46cf.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-9cc84586.abce73ed.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-9e37071c.87fd8dd4.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-a19fb016.4d54c14d.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-a1a534b4.a9421bff.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-ab15f0f2.98b8b0f3.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-abbb58be.2974eaa4.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-baf9b5f2.ed61f465.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-c47ffdf0.39771330.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-d2f5e2fa.36901640.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-d6822266.fe982457.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-da80c22e.aab8daa8.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-dc450b20.f66e22f8.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-dcf3975e.43c7f58e.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-e22e9400.ba3b6903.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-e7851d44.4f70d672.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-eaddf728.47bebd34.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-f2662300.a8375d51.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-f7bfa5a4.f3c798b8.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-f863ee3a.52c24b5f.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-f86d6080.5e8f9a13.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-fbe16a7c.c3f9163b.css" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-02a392b2.eb8a1272.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-06dbebe2.f1ac2516.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-089cad30.f9f076e3.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-099f37d3.1150a444.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-0b65ffb6.98d5070c.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-0c629268.2eb63927.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-0ca3e118.265e26b0.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-0d3627c8.3d481cef.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-0e157316.25f8aaf6.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-0e59b3de.0c16a8a2.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-0f3ff6e9.26919021.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-10defe78.04d91af5.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-14b89fa8.12247246.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-15d84476.b029fd15.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-1654a7b4.b39421e8.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-19264c48.a504d006.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-19b9ce8f.69ec1d80.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-19dc26c8.db2c1bee.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-1a777316.d2bbbc0f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-1b3ac5a6.633e4275.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-1e2736cd.d3c4a681.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2106ceee.1a4d6576.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-21832923.2c1f3ff7.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-248a06f3.03682664.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-25dfa9cd.c3a66a44.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-25fb0936.97f140de.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2803d6ef.f814c0f2.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0a43df.e87f4ee8.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0a4d9d.96cc2aa3.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0b2ef8.d3a490bf.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0b8afe.6c703ce0.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0c0841.d1bd9ba3.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0c86e3.cafb52de.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0cc451.7ffb86f3.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0ceef0.c6f392e6.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0cf8a0.35487b8f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0e542a.d4c2210e.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0e883f.522ae4b3.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d0e88bd.a3181037.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d20f196.ccf70fb8.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d20f745.b79ac6a5.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d20ff23.9aa317e8.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d21627f.3e7eb366.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d21b84a.3aa45f8f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d21d087.d683c655.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d21d7e8.dda5fffe.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d221814.c6889716.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d2223d0.3fa535df.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d22502a.eac289b6.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d226556.a8f96372.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d22bd51.d10e33d4.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d22c2b8.29707b7f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d22ca58.b3c92d11.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d22db97.bbd37e20.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-2d231063.ee4fb0ae.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-31f732da.39170ac5.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-3362071e.d2236887.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-33947c1c.dc6d0219.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-3486d100.d4b6167f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-359168a8.3b2fa1cb.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-383883bc.c8142917.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-3980c44c.8e0d97be.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-3aaf4310.3633ba6f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-3de7ca1a.51dade13.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-3e3eff09.098fc3da.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-3e62b933.322c3248.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-3e8bc275.a844d209.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-3eef8ed0.d658f227.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-420ab908.0c504d2b.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-420d2357.3b7fdab9.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-437dd12e.64d42d93.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-448fa7a4.5ab90d86.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-45e067f0.394fb4c9.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-46a51dd8.ef7f350c.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-476928ae.5cdf744c.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-480319ea.abaf17b7.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-48cd6ec9.d47eaaed.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-491a7c18.7b2ad4bf.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-4c651f70.67c3240f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-4f85ba5e.80286e13.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-4fe94c06.4693db8c.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-50e85abc.cf3a3176.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-515cba41.816419fc.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-52ba2f67.ffd2fb73.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-53ff8f9c.7d729ba1.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-590cf06f.34e738c1.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-5b32b47c.2e09b5a0.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-5d3cffdf.4bd25242.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-5d9f4370.a9e69946.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-5e469d6a.f84b969f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-60b97a5e.f542121a.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-61d5c0cf.973d9427.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-61e44514.dd49c218.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-64c17fcc.9fb2f218.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-6807073d.e03d115d.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-68957f65.10ef30fe.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-6a9fd05e.e1df79fa.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-6c6c6e17.f8b1e54b.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-6cb85ebb.04757209.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-6d8fc35a.395e9120.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-71670754.4f0ebb9e.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-7206b90e.760c67f6.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-72d23e1c.10047fd6.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-745da3b3.5eecb7d0.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-7532b3ea.207acacb.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-759e21b4.23e2ba6a.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-75b11a6f.e73e7170.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-7607062f.e722e0ea.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-765dc3b2.ee7c93e2.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-79096856.3b3ce3a9.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-7a84e362.5cf859fd.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-7b1e3b3f.129a2868.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-7b616c4f.d464a33b.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-7c180234.2f0acc55.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-7e096296.73cf38db.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-803ef20a.bcd9c7ec.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-83c91122.f627f65f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-84e5b858.1a285fd3.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-87c99dc8.69fe153f.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-8a36ff58.0ddda532.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-91442774.fc221515.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-91a89988.0b83a27e.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-97af95ae.54e83092.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-9cc84586.4828b743.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-9e37071c.4266bf21.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-a19fb016.65991ac8.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-a1a534b4.d1f94714.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-ab15f0f2.48ffeab2.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-abbb58be.84cc4bd5.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-baf9b5f2.c054dad9.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-c47ffdf0.64b1e942.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-d2f5e2fa.00a002cd.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-d6822266.5a8b3015.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-da80c22e.cd84d1f0.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-dc450b20.390c7d4a.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-dc72b9b2.be0aee4b.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-dcf3975e.8a46b701.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-e13e4362.b8ae33b7.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-e22e9400.f6d09ff2.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-e47faa9a.b49a9595.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-e7851d44.f8adf76d.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-eaddf728.9c4a486c.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-f2662300.63575f8b.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-f7bfa5a4.4caa9da1.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-f863ee3a.d404d167.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-f86d6080.34bce7d9.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-fa880da6.25e43e12.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-fbe16a7c.d20abb74.js" rel="prefetch"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-fcba7d50.d1699470.js" rel="prefetch"/>
+  <link as="style" crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-common.da86fa1b.css" rel="preload"/>
+  <link as="style" crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-vendors.3d1b6a4f.css" rel="preload"/>
+  <link as="script" crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-common.498f4f9b.js" rel="modulepreload"/>
+  <link as="script" crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/chunk-vendors.0f939f16.js" rel="modulepreload"/>
+  <link as="script" crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/js/index.ea0735c4.js" rel="modulepreload"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-vendors.3d1b6a4f.css" rel="stylesheet"/>
+  <link crossorigin="use-credentials" href="https://hyperskill.azureedge.net/static/css/chunk-common.da86fa1b.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="app">
+  </div>
+  <script crossorigin="use-credentials" src="https://hyperskill.azureedge.net/static/js/chunk-vendors.0f939f16.js" type="module">
+  </script>
+  <script crossorigin="use-credentials" src="https://hyperskill.azureedge.net/static/js/chunk-common.498f4f9b.js" type="module">
+  </script>
+  <script crossorigin="use-credentials" src="https://hyperskill.azureedge.net/static/js/index.ea0735c4.js" type="module">
+  </script>
+  <script>
+   !function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();
+  </script>
+  <script crossorigin="use-credentials" nomodule="" src="https://hyperskill.azureedge.net/static/js/chunk-vendors-legacy.06ed8c6b.js">
+  </script>
+  <script crossorigin="use-credentials" nomodule="" src="https://hyperskill.azureedge.net/static/js/chunk-common-legacy.5a3425a1.js">
+  </script>
+  <script crossorigin="use-credentials" nomodule="" src="https://hyperskill.azureedge.net/static/js/index-legacy.ff2e8d97.js">
+  </script>
+ </body>
+</html>

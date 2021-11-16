@@ -149,7 +149,7 @@
 
 # new_list = [1, 2, 3, 4, 5
 # print(new_list)
-#   File "main.py", line 2
+#   File "exercise.py", line 2
 #       print(new_list)
 #       ^
 # SyntaxError: invalid syntax
@@ -176,7 +176,7 @@
 # a = 'Python' + 25
 # print(a)
 # Traceback (most recent call last):
-#   File "main.py", line 1, in <module>
+#   File "exercise.py", line 1, in <module>
 #       a = 'Python' + 25
 # TypeError: can only concatenate str (not "int") to str
 
@@ -203,7 +203,7 @@ a = int(user_input)
 print(a)
 
 # Traceback (most recent call last):
-#   File "main.py", line 1, in <module>
+#   File "exercise.py", line 1, in <module>
 #       a = int(user_input)
 # ValueError: invalid literal for int() with base 10: 'cat'
 
@@ -213,7 +213,7 @@ cats.remove('Alex')
 print(cats)
 
 # Traceback (most recent call last):
-#   File "main.py", line 2, in <module>
+#   File "exercise.py", line 2, in <module>
 #       cats.remove('Alex')
 # ValueError: list.remove(x): x not in list
 
@@ -231,7 +231,7 @@ print(cats)
 # will be raised:
 f = open('i_dont_exist.txt')
 # Traceback (most recent call last):
-#   File "main.py", line 1, in <module>
+#   File "exercise.py", line 1, in <module>
 #       f = open('i_dont_exist.txt')
 # FileNotFoundError: [Errno 2] No such file or directory: 'i_dont'_exist.txt'
 
@@ -253,7 +253,7 @@ from math import square
 # Or when a spelling mistake was made in the module name:
 import maths
 # Traceback (most recent call last):
-#   File "main.py", line 1, in <module>
+#   File "exercise.py", line 1, in <module>
 #       import maths
 # ModuleNotFoundError: No module named 'maths'
 
@@ -297,7 +297,7 @@ third = input()  # this was not expected
 # Take a look at the following code:
 prant("Hello, world!")
 # Traceback (most recent call last):
-#   File "main.py", line 1, in <module>
+#   File "exercise.py", line 1, in <module>
 #       prant("Hello, world!")
 # NameError: name 'prant' is not defined
 
@@ -308,7 +308,7 @@ prant("Hello, world!")
 a = 'Hello, world!'
 print(b)
 # Traceback (most recent call last):
-# File "main.py", line 2, in <module>
+# File "exercise.py", line 2, in <module>
 # print(b)
 # NameError: name 'b' is not defined
 
@@ -321,7 +321,7 @@ print(b)
 new_list = ['the only element']
 print(new_list[1])
 # Traceback (most recent call last):
-#   File "main.py", line 2, in <module>
+#   File "exercise.py", line 2, in <module>
 #       print(new_list[1])
 # IndexError: list index out of range
 

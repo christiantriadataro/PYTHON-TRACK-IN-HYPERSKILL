@@ -46,13 +46,13 @@
 
 # 1
 # Traceback (most recent call last):
-#   File "main.py", line 2, in <module>
+#   File "exercise.py", line 2, in <module>
 #       assert word != "cat"
 # AssertionError
 
 # 2
 # Traceback (most recent call last):
-#   File "main.py", line 3, in <module>
+#   File "exercise.py", line 3, in <module>
 #       assert word != "cat", message
 # AssertionError: 'cat' is the wrong word!
 
@@ -76,7 +76,7 @@
 # print(x, y)
 
 # Traceback (most recent call last):
-#   File "main.py", line 3, in
+#   File "exercise.py", line 3, in
 #       assert (x ** 2 / y ** 2) - y != 2, "There are wrong values!
 # AssertionError: There are wrong values!
 
@@ -95,9 +95,9 @@
 # print(test_mark(2))
 
 # Traceback (most recent call last):
-#   File "main.py", line 7, in
+#   File "exercise.py", line 7, in
 #       print(test_mark(i))
-#   File "main.py", line 3, in test_mark
+#   File "exercise.py", line 3, in test_mark
 #       assert i > 4, message
 # AssertionError: This student got a bad mark!
 

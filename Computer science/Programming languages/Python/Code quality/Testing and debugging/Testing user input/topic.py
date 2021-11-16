@@ -82,7 +82,7 @@ def check(x):
 
 # Enter an integer number between 25 and 50: wrong!
 # Traceback (most recent call last):
-#   File "main.py", line 9, in
+#   File "exercise.py", line 9, in
 #       your_int = int(input("Enter a number between 25 and 50: ")
 # ValueError: invalid literal for int() with base 10: 'wrong!'
 
