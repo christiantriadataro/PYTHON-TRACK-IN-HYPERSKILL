@@ -1,0 +1,130 @@
+Theory: Starting with Git
+
+In this topic, we will start exploring Git, the essential tool to
+control and merge your code versions. We will learn what Git is,
+why we need to use it, and how to install it on the three major
+operating systems.
+
+What is Git?
+Git is a distributed version control system that helps developers
+track and record changes in the files. These can be any files one
+wants to work with, but we will take a closer look at the source
+codes of programs. With Git you can rollback to an older version
+of your project, compare it, analyze and merge changes. This
+process is called version control.
+Git is distributed, that is, it doesn't depend on a single central
+server that stores files. Instead, it works entirely locally, storing
+data in folders on your hard drive called a repository. This is the
+local repository, existing only on your hard drive. However, you
+can keep a copy of it online, which makes it a lot easier for
+multiple people to work on the same project. In that case, it is a
+remote repository.
+
+A number of services provide hosting for Git repositories,
+among the most famous are GitHub, Codebase, SourceForge,
+SourceHut, Bitbucket, GitLab and Gitorious, but it was acquired
+by GitLab in 2015. Further, we will discuss only GitHub as the
+most popular among these resources. Anyway, if you want, you
+may use others listed above instead.
+
+Git is a free and open-source software primarily developed on
+Linux but it also supports most major operating systems,
+including macOS and Windows. Now we will learn how to install
+Git on these systems.
+
+Git is a free and open-source software primarily developed on
+Linux but it also supports most major operating systems,
+including macOS and Windows. Now we will learn how to install
+Git on these systems.
+
+2. Installing Git
+1. Windows
+There are several ways to install Git on Windows. First, you can
+go to the official Git site, and the download will start
+automatically, After installation, you need to select the options
+you need in the settings.
+
+For unattended installation, you can also use the Git Chocolatey
+package.
+
+Another easy way to install Git is to install GitHub for Windows.
+Its installer includes command-line utilities and GUI Git. You
+can download GitHub for Windows from the GitHub Desktop
+website.
+
+2. Linux
+You can just open a terminal and install the application using
+your distribution's package manager. If you have Fedora (or
+another similar distribution such as RHEL or CentOS), you can
+use dnf:
+
+$ sudo dnf install git-all
+
+If you have a Debian-based distribution like Ubuntu, try apt:
+
+$ sudo apt install git
+
+
+3. macOS
+There are several ways to install Git on Mac.
+
+You may install the Xcode Command Line Tools by typing the
+following command in your terminal:
+
+xcode-select --install
+
+Then you cna simply check if Git is already installed:
+$ git --version
+
+If Git is not installed, you will be prompted to install it.
+
+The other way is to use homebrew, which can be installed from
+the terminal using the command below:
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+More information on homebrew can be found on the homebrew
+official website. After installing it, run in the terminal
+
+brew install git
+
+You can also install Git when installing GitHub for Mac. Their
+GUI Git tool has an option to install command line tools as well.
+You can download the GitHub client for Mac.
+
+3. Git settings
+So, we have successfully installed Git, now we need to adjust
+some settings. There are quite a few options to play with, but
+we'll set up the most important ones: our username and email
+address. Open the terminal and run these commands:
+
+git config --global user.name "My Name"
+git config --global user.email myEmail@example.com
+
+Now each of our actions will be marked with our name and e-
+mail address. Thus, users will always know who is responsible
+for certain changes: this brings order!
+
+4. Git check
+Usually, the installation is successful, but just in case, we
+recommend you to check that the latest version of Git has
+actually been installed by running the git --version command
+in the terminal. The result will be the following:
+
+git version 2.17.1
+
+This means that the Git is installed and you can start working
+with it.
+
+
+5. The Conclusion
+Let's sum up what you've learned in this topic:
+- Git is a set of console utilities to store, control, change and
+  merge your codes.
+- You can easily install it on Windows, Linux, or macOS.
+- With Git you can keep your projects either locally on your
+  hard drive or using an online service.
+
+Now, since you are familiar with Git, you might be interested to
+discover more about it in the next topics, But first, let's get to
+some tasks!
