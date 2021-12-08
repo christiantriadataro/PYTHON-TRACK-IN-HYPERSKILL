@@ -135,7 +135,6 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 # id="boldest"> has an attribute "id" whose value is "boldest". You
 # can access a tag's attributes by treaing the tag like a
 # dictionary:
-# tag = BeautifulSoup('<b id="boldest">bold</b>', 'html.parser').b
 # print(tag['id'])
 # boldest
 

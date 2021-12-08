@@ -1,0 +1,154 @@
+Flowchart
+
+1. Why flowcharts
+Sometimes we use graphical representation to describe
+certain phenomena, behaviors, or rules. For example, the
+list of metro stops shown as a sequence of names marked
+on a line of a certain color allows us to find out how many
+stops are left or where to get off to change to another
+metro line marked with the appropriate color.
+
+In the case of describing a sequences of activities, we can
+use flowcharts to visualize the process. They allow us to
+define the sequence of events/tasks, the start of
+activities, and their end. Here's an example of a flowchart
+describing how to proceed when a lamp does not work.
+
+2. Flowcharts for algorithms
+There are different ways to describing algorithms. We
+can, for example, use:
+- verbal description;
+- a list of steps;
+- block diagrams alias flowcharts;
+- and finally, a computer program.
+
+Breaking down an algorithm using flowcharts will
+significantly speed up its implementation. Understanding
+the data flow and dependencies and discovering possible
+scenarios will allow you to consciously implement the
+solution rather than build it by trial and error.
+
+Nobody expects that you will write a flowchart for every
+algorithms, but when you understand the idea while
+programming, you will still put these  blocks together in
+your mind.
+
+3. Basic block types
+We will consider the most important blocks using an
+example of a simplified divide-by-zero algorithm. We can
+describe the algorithm as the following list of steps:
+    1. Ask the user for two numbers: a and b.
+    2. If b is equal to 0, ask the user for input again.
+    3. If b is not equal to 0, assign the division of a by b
+       to the variable result.
+    4. Display the result.
+
+Now, let's try to write it down as a flowchart.
+
+Terminal - an oval or rounded (fillet) rectangle element
+which describes the beginning or the end of a schema
+sequence. There can be only one start block and one stop
+block in a flowchart. If the START requires an external
+procedure or a function, we also provide input. If the
+STOP is an outer function, we identify what the function
+returns.
+
+
+Flowline (Arrowhead) - it indicates the order of blocks to
+be executed.
+
+
+Input/Output - a rhomboid is used to describe read/print
+instructions such as user input or a message display.
+
+
+Decision - a diamond is used to describe a conditional
+operation. At the exit of the block, we have the values
+True/False. The results of the conditional operation
+branch from the two free vertices of the diamond. It
+makes no difference which vertices you use (two of the
+three are always available), it all depends on how the
+flowchart is drawn. So when the result of the condition is,
+for example, True, the algorithm continues with the
+flowline coming from the vertex marked as True.
+
+Process - a rectangle is used to describe the operations
+that change the data.
+
+And finally - we can print the result and end the algorithm.
+
+You may come across other approaches to labeling
+blocks. For example, instead of input/print, one can
+use the in/out terminology; instead of True/False,
+you can see the Yes/No; and instead of math operation
+like x < 0, there can be a question: Is x less than 0?.
+However, in our further topics and projects, we wil use
+the notation described above.
+
+4. More blocks types
+Predefined function or procedure - it is an external
+program we can pass input data to or get the result from:
+
+
+On-page connector - a circle with a letter inside is used
+as a connector to show a jump from one point in the
+algorithm to another. It can be used in case it is difficult
+to draw a link between some blocks or if such a link
+would make the algorithm less readable.
+
+Off-page connector- it works just like the previous
+connector but represents a jump from one page in the
+document to another:
+
+
+5. Flowchart examples
+As an example, we can make a flowchart of the algorithm
+that calculates the area of a rectangle.
+    1. The algorithm asks the user for two variables: a and b.
+    2. If one of the variables is less than or equal to zero,
+       the function is_positive returns False, and the
+       algorithm will ask for input data again. Otherwise,
+       the function returns True.
+    3. If both variables are equal, the function
+       check_square prints a message that the shape is a
+       square; otherwise, it prints the message that this is
+       a rectangle.
+    4. Finally, the algorithm displays the result of
+       multiplying the variables a and b.
+    5. Note that both external algorithms have specific
+       inputs and one of them also returns a value.
+    6. Additionally, you can see an on-page connector
+       linking two parts of the algorithm.
+
+The first of the external functions checks whether the
+figure is a square or a rectangle and displays an
+appropriate message.
+
+No value is returned; only two variables are passed to the
+function. So we call this function a Predefined function or
+procedure.
+
+Other functions checks if both numbers are greater
+than zero and returns True/False.
+
+Because the function returns a value, in the proces block
+we will call it an assignment to the variable check
+
+Here you can see the whole algorithm. Please take a
+close look to understand how each block works
+
+Here is another flowchart example; it illustrates different
+notation principles. The following algorithm asks for the
+variable i and loops until i is equal to 20. On the right,
+you can see the approach we use in Hyperskill; on the
+left, an example of an alternative notation.
+
+
+6. Conclusion
+    1. Flowcharts help you understand the logic of ann
+       algorithm.
+    2. They are especially help at the beginning of
+       learning algorithmization.
+    3. There are different ways to describe the logic of an
+       algorithm. We will stick to the one described in this
+       topic.
