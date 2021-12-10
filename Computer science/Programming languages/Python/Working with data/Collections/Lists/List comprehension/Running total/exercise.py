@@ -7,9 +7,10 @@
 # equals to [1, 3, 6]
 # new_list = [int(x) for x in input()]
 # print(new_list)
-s = [1, 2, 3]
-temp_list = [s[0], s[0] + s[1], s[0] + s[1] + s[2]]
-new_list = []
-for x in range(0, len(s) + 1):
-    new_list.append(sum(s[0:x:1]))
-print(new_list)
+# s = [1, 2, 3]
+# temp_list = [s[0], s[0] + s[1], s[0] + s[1] + s[2]]
+# new_list = []
+# for x in range(0, len(s) + 1):
+#     new_list.append(sum(s[0:x:1]))
+# print(new_list)
+print([x for x in input()])

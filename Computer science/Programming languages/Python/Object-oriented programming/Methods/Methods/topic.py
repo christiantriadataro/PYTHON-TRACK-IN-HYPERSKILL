@@ -1,4 +1,6 @@
-# If attributs define the data that the objects of a particular class
+# Theory: Methods
+
+# If attributes define the data that the objects of a particular class
 # have, the methods define their behavior. Python has several
 # types of methods that you can create within a class but, in this
 # topic, we will focus on the instance methods.
