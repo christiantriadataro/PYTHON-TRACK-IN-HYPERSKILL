@@ -1,6 +1,6 @@
-Theory: Computer algorithms
+## Theory: Computer algorithms
 
-You have probably heard something about algorithms in
+You have probably heard something about **algorithms** in
 real life. Simply put, an algorithms is a step-by-step
 sequence of actions you need to perform to achieve the
 desired result. It can be an algorithm for cooking a
@@ -8,13 +8,15 @@ sandwich described by a recipe or an algorithm for
 getting dressed according to today's weather and your
 mood
 
+![](https://ucarecdn.com/9c5599bf-a50a-4cf4-9717-b22eb2c5f0bd/)
+
 Among all algorithms, there is one special group called
-computer algorithms. They are usually created for and
+**computer algorithms**. They are usually created for and
 utilized by computers. In this topic, we will discuss in
 detail what computer algorithms are, as well as explain
 why it is important to learn them.
 
-1. Computer algorithms
+#### 1. Computer algorithms
 Computer algorithms are everywhere around us. Your
 smartphone is able to guide you through a city from one
 point to another using a certain algorithm. Other
@@ -25,6 +27,8 @@ relevant results when you use them to search for
 information on the Web. Algorithms are also used to
 calculate the trajectory of rockets. And they even help
 doctors to determine diagnoses correctly!
+
+![](https://ucarecdn.com/6c08ff31-0af5-4222-941d-a1df7224493f/)
 
 An important difference between real-life and computer
 algorithms is that a computer cannot guess what we
@@ -40,7 +44,7 @@ which would result in incorrect output, Thus, it is our
 responsibility to describe a computer algorithm precisely
 and unambiguously.
 
-2. Programs and algorithms
+#### 2. Programs and algorithms
 As you may know, a program is a sequence of instructions
 to perform some tasks on a computer. The difference
 between programs and algorithms is that programs are
@@ -72,6 +76,8 @@ you solve with your teacher during the class, and at home
 you have to solve other tasks using the methods
 discussed during the lesson.
 
+![](https://ucarecdn.com/ca99ead2-e00e-4384-b9e7-dfc4a01603cf/)
+
 Algorithms from standard libraries cannot cover all
 possible problems developers can encounter, so you will
 usually have to construct and implement your own
@@ -88,7 +94,7 @@ reason why it is essential to learn algorithms: you need to
 know which one and when to apply and how to implement
 it efficiently.
 
-3. Summary
+#### 3. Summary
 An algorithm is a sequence of actions you need to
 perform to achieve a certain result. An important group of
 algorithms is computer algorithms: the ones created for
