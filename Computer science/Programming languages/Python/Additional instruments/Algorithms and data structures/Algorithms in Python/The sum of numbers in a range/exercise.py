@@ -10,12 +10,8 @@
 # details.
 
 def range_sum(numbers, start, end):
-    sum = 0
-    for i in range(0, len(numbers)):
-        if start <= numbers[i] <= end:
-            sum += numbers[i]
-    return sum
-
-input_numbers = input().split()
-a, b = input().split()
+    return sum(filter(lambda x: start <= x <= end, numbers))
+    return sum(num for num in numbers if start <= num <= end)
+input_numbers = list(map(int, input().split()))
+a, b = tuple(map(int, input().split()))
 print(range_sum(input_numbers, a, b))
