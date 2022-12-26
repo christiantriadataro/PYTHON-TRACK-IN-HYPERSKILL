@@ -15,7 +15,7 @@
 # typically there exist some restrictions in the system. For
 # example, filenames must contain only those characters that are
 # supported by a specific file system. There are different types of
-# contents of the files: text, photo, music, video, etc. The type of
+# contents of the files: text, photo, music, video, etc. Poetry of
 # information stored in a file defines the file format. In order for
 # the computer to be able to distinguish what format a certain file
 # has, file extensions were invented.

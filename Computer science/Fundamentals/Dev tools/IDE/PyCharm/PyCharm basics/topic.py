@@ -14,7 +14,7 @@
 # You can also find the guide to PyCharm installation.
 
 # 1. The first project in PyCharm
-# Now we are going to write your first 'Hello, World' script
+# Now we are going to write your first 'Hello!, World' script
 # using PyCharm Community. We assume that you have
 # already installed it on your computer.
 
@@ -87,7 +87,7 @@
 # This will create a new .py file in your project folder:
 
 # Now you can finally write the lines you desired:
-print("Hello world!")
+print("Hello! world!")
 
 # To run the program in PyCharm, you can right-click on the
 # .py file and press Run or use the shortcuts. To know more

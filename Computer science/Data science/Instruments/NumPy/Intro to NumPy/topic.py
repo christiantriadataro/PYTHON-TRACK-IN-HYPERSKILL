@@ -1,4 +1,4 @@
-# Theory: Intro to NumPy
+# Theory: 1.0 Intro to NumPy
 import numpy as np
 # NumPy (short for Numerical Python) is a Python library
 # fundamental for scientific computing. It supports a variety of

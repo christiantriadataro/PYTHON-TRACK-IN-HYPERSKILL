@@ -68,7 +68,7 @@
 # that says "Rerun" at the toolbar:
 
 
-# 3. Simple programs
+# 3. 2.0 Simple programs
 # Let's try to write some code and see what happends in the shell.
 # For example, you can use it as a simple calculator:
 

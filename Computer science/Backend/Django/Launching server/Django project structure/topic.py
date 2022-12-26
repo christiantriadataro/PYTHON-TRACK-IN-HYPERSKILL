@@ -165,12 +165,12 @@ urlpatterns = [
 from django.http import HttpResponse
 
 def example_view(request):
-    return HttpResponse("Hello, world")
+    return HttpResponse("Hello!, world")
 
 # The HttpResponse object is a special object that stores all the
 # data required to be returned to the client. You'll discover more
 # about it in the next topics, for now it's enough to say that the
-# example view returns the "Hello world" line.
+# example view returns the "Hello! world" line.
 
 # 5. Conclusion
 # You've learned to create a new project with the help of django-

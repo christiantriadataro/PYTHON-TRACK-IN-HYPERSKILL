@@ -1,4 +1,4 @@
-# Theory: Basics of sets
+# Theory: 1.0 Basics of sets
 
 # 1. What is a set?
 # Suppose we have a collection of numbers: 1,2,3,4,5, or a

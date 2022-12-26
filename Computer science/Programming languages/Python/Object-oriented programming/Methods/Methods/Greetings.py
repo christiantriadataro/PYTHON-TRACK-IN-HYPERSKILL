@@ -1,6 +1,6 @@
 # Below is a class Person and you want to add a method greet
 # to this class. This method is supposed to return the message
-# Hello, I am name! where name is the name of this person.
+# Hello!, I am name! where name is the name of this person.
 
 # Your task here is to define this method; create an instance of
 # the class Person with the input value as the parameter name;
@@ -18,7 +18,7 @@
 # David
 
 # Sample Output 1:
-# Hello, I am David!
+# Hello!, I am David!
 
 class Person:
     def __init__(self, name):

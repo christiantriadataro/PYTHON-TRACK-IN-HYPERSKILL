@@ -104,7 +104,7 @@
 # an unnecessary complication if applied unwisely. Beginner
 # developers may try to apply patterns everywhere, even in
 # situations where a simple code would do just fine. Look how
-# design patters can complicate even the simplest "Hello,
+# design patters can complicate even the simplest "Hello!,
 # World" program.
 
 # To avoid misusing the patterns, you should apply them wisely

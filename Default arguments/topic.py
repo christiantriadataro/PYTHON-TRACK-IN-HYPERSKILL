@@ -35,7 +35,7 @@ locate("Craters", "Mercury")            # Craters on Mercury
 # first and then those with default values. If you try doing the
 # opposite, SyntaxError will crop up:
 
-# def greet(greeting="Hello, ", name):
+# def greet(greeting="Hello!, ", name):
 #    print(greeting, name)
 # SyntaxError: non-default argument follows default argument
 
@@ -95,7 +95,7 @@ def add_player(player, team=None):
 # Look at the declared functions shown in this optic one more
 # time, for example, def locate(place, planet="Earth"): ...
 # Have you noticed missing spaces around the equals sign? Their
-# absence is not accidental. By PEP 8 convention, you should not
+# absence is not accidental. By 1.0 PEP 8 convention, you should not
 # put spaces around = when indicating a keyword argument. This
 # holds true for parameters with default values.
 
