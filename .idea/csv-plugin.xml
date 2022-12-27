@@ -80,6 +80,41 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\DataCamp\Machine Learning Scientist with Python\1.0 Supervised Learning with scikit-learn\datasets\advertising_and_sales_clean.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Machine Learning Scientist with Python\1.0 Supervised Learning with scikit-learn\datasets\airline_bumping.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Machine Learning Scientist with Python\1.0 Supervised Learning with scikit-learn\datasets\diabetes_clean.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Machine Learning Scientist with Python\1.0 Supervised Learning with scikit-learn\datasets\music_clean.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Machine Learning Scientist with Python\1.0 Supervised Learning with scikit-learn\datasets\telecom_churn_clean.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
