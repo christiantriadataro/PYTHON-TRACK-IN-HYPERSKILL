@@ -115,6 +115,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\DataCamp\Python Programmer\3.0 Python Data Science Toolbox (Part 1)\datasets\tweets.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
