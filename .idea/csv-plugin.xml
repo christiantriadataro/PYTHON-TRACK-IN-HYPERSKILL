@@ -115,6 +115,27 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\DataCamp\Python Programmer\2.0 Data Manipulation with pandas\datasets\airline_bumping.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\2.0 Data Manipulation with pandas\datasets\homelessness.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\2.0 Data Manipulation with pandas\datasets\temperatures.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\DataCamp\Python Programmer\3.0 Python Data Science Toolbox (Part 1)\datasets\tweets.csv">
           <value>
             <Attribute>
