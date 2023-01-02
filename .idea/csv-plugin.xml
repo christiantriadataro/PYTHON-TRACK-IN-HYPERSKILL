@@ -115,6 +115,41 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\DataCamp\Python Programmer\1.0 Introduction to Data Science in Python\datasets\all_frequencies.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\1.0 Introduction to Data Science in Python\datasets\cell_phone_records.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\1.0 Introduction to Data Science in Python\datasets\credit_records.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\1.0 Introduction to Data Science in Python\datasets\ransom.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\1.0 Introduction to Data Science in Python\datasets\shoe_gravel_sample.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\DataCamp\Python Programmer\2.0 Data Manipulation with pandas\datasets\airline_bumping.csv">
           <value>
             <Attribute>
@@ -123,6 +158,13 @@
           </value>
         </entry>
         <entry key="\DataCamp\Python Programmer\2.0 Data Manipulation with pandas\datasets\homelessness.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\2.0 Data Manipulation with pandas\datasets\sales_subset.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
