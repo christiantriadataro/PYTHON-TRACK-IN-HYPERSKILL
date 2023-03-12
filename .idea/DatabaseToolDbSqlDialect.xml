@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseToolDbSqlDialect">
+    <option name="dialects">
+      <map>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/a83a315f-35a8-45a5-8c51-f06f81f2f706/console.sql" value="Oracle" />
+        <entry key="$PROJECT_DIR$/Information Management/Lecture/Module 1/FORMATIVE.SQL" value="Oracle" />
+      </map>
+    </option>
+  </component>
+</project>

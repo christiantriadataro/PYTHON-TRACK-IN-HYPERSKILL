@@ -66,6 +66,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Course offerings\curriculum.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\DataCamp\1.0 Introduction to Python\1.4.0 NumPy\mlb.csv">
           <value>
             <Attribute>
@@ -74,6 +81,20 @@
           </value>
         </entry>
         <entry key="\DataCamp\1.0 Introduction to Python\1.4.0 NumPy\soccer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Data Analyst in SQL\1.0 Understanding Data Visualization\1.1.0 Visualizing distributions\datasaurus_dozen.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Data Analyst in SQL\4.0 Introduction to SQL\datasets\books.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -179,6 +200,48 @@
           </value>
         </entry>
         <entry key="\DataCamp\Python Programmer\3.0 Python Data Science Toolbox (Part 1)\datasets\tweets.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\4.0 Python Data Science Toolbox (Part 2)\datasets\tweets.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\4.0 Python Data Science Toolbox (Part 2)\datasets\world_bank.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Information Management\course.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Information Management\datasets\countries\cities.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Information Management\professor.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Information Management\student.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
