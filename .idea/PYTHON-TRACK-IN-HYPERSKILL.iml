@@ -7,6 +7,8 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9 (venv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="DataCamp_Projects" />
+    <orderEntry type="module" module-name="CS0043" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />

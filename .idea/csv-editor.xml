@@ -31,6 +31,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\DataCamp\Machine Learning Scientist with Python\1.0 Supervised Learning with scikit-learn\datasets\telecom_churn_clean.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\DataCamp\Python Programmer\2.0 Data Manipulation with pandas\datasets\temperatures.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\DataCamp\Python Programmer\3.0 Python Data Science Toolbox (Part 1)\datasets\tweets.csv">
           <value>
             <Attribute>

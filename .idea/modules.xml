@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../CS0043/.idea/CS0043.iml" filepath="$PROJECT_DIR$/../../CS0043/.idea/CS0043.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../DataCamp_Projects/.idea/DataCamp_Projects.iml" filepath="$PROJECT_DIR$/../../DataCamp_Projects/.idea/DataCamp_Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PYTHON-TRACK-IN-HYPERSKILL.iml" filepath="$PROJECT_DIR$/.idea/PYTHON-TRACK-IN-HYPERSKILL.iml" />
     </modules>
   </component>

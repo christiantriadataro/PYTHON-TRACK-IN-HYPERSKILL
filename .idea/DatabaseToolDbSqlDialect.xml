@@ -3,8 +3,10 @@
   <component name="DatabaseToolDbSqlDialect">
     <option name="dialects">
       <map>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/1d789f5f-3104-4fa2-9375-791a00e18ee2/console.sql" value="Oracle" />
         <entry key="$APPLICATION_CONFIG_DIR$/consoles/db/a83a315f-35a8-45a5-8c51-f06f81f2f706/console.sql" value="Oracle" />
         <entry key="$PROJECT_DIR$/Information Management/Lecture/Module 1/FORMATIVE.SQL" value="Oracle" />
+        <entry key="$PROJECT_DIR$/Information Management/Technical Assessment 2/Tech6_DINGDONG_DUNKIN.sql" value="Oracle" />
       </map>
     </option>
   </component>
