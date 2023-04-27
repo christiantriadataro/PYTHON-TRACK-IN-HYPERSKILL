@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../AlgoExpert Algorithms/.idea/AlgoExpert Algorithms.iml" filepath="$PROJECT_DIR$/../../AlgoExpert Algorithms/.idea/AlgoExpert Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../CS0005/.idea/CS0005.iml" filepath="$PROJECT_DIR$/../../CS0005/.idea/CS0005.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../CS0007/.idea/CS0007.iml" filepath="$PROJECT_DIR$/../../CS0007/.idea/CS0007.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../CS0043/.idea/CS0043.iml" filepath="$PROJECT_DIR$/../../CS0043/.idea/CS0043.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../DataCamp_Projects/.idea/DataCamp_Projects.iml" filepath="$PROJECT_DIR$/../../DataCamp_Projects/.idea/DataCamp_Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PYTHON-TRACK-IN-HYPERSKILL.iml" filepath="$PROJECT_DIR$/.idea/PYTHON-TRACK-IN-HYPERSKILL.iml" />

@@ -9,6 +9,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="DataCamp_Projects" />
     <orderEntry type="module" module-name="CS0043" />
+    <orderEntry type="module" module-name="CS0007" />
+    <orderEntry type="module" module-name="CS0005" />
+    <orderEntry type="module" module-name="AlgoExpert Algorithms" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
