@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\DataCamp\Python Programmer\2.0 Data Manipulation with pandas\datasets\airline_bumping.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\DataCamp\Python Programmer\2.0 Data Manipulation with pandas\datasets\temperatures.csv">
           <value>
             <Attribute>
