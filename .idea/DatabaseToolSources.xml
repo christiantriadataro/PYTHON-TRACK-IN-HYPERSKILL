@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseToolSources">
+    <data-source name="CS0005" uuid="c615e682-e21c-4549-98b4-656f8598e161" type="ORACLE">
+      <base-info connect-type="SID" product="Oracle" version="Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production" jdbc-name="Oracle JDBC driver" jdbc-version="11.2.0.3.0" />
+      <user-name>CS0005_CHAN</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="CS0005_CHAN" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <url>jdbc:oracle:thin:@localhost:1521:XE</url>
+      <remarks />
+      <driver-info id="oracle11" />
+      <ssh-properties enabled="false" />
+      <jdbc-additional-properties>
+        <property name="defaultRowPrefetch" value="2000" />
+        <property name="oracle.jdbc.timezoneAsRegion" value="false" />
+      </jdbc-additional-properties>
+      <ssl-config enabled="false">
+        <uuid />
+        <caFile />
+        <clientCertificateFile />
+        <clientKeyFile />
+        <sslMode>REQUIRE</sslMode>
+      </ssl-config>
+    </data-source>
+  </component>
+</project>
