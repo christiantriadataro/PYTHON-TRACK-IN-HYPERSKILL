@@ -16,6 +16,7 @@
     <orderEntry type="module" module-name="Leetcode--Codewards--Hackerrank" />
     <orderEntry type="module" module-name="enjoy_algorithms_course" />
     <orderEntry type="module" module-name="Khan Academy" />
+    <orderEntry type="module" module-name="notes" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
